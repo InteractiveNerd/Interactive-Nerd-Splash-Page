@@ -3,3 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --green: #9DC408;
+  --dark-green: #659723;
+  --black: #24231F;
+}
+
+body {
+  background: var(--green);
+}
