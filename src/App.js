@@ -14,6 +14,7 @@ import Introduction from './components/Introduction';
 import Description from './components/Description';
 import EmailField from './components/EmailField';
 import NameField from './components/NameField';
+import Submit from './components/SubmitButton';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Description />
       <EmailField />
       <NameField placeholder="First Name" />
+      <Submit />
       <Divider />
       <FooterTitle />
       <FooterSubtitle />

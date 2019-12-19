@@ -1,0 +1,8 @@
+.button {
+  border: 0.062rem solid var(--green);
+  background: transparent;
+  width: 3rem;
+  height: 1.875rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
