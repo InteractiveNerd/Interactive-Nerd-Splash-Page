@@ -39,7 +39,7 @@ body {
 
 .input--field {
   background: var(--white) 0% 0% no-repeat padding-box;
-  border: 0.062rem solid var(--black);
+  border: none;
   border-radius: 0.187rem;
   height: 2rem;
   font-size: 0.687rem;

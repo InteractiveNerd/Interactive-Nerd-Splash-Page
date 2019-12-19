@@ -7,7 +7,7 @@ class EmailField extends Component {
       <div>
         <input
           className="input--field email--field"
-          placeholder="enter email address"
+          placeholder="Your email address"
           required={true}
           type="email"
           id="email"

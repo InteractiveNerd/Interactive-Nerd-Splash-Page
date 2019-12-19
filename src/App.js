@@ -13,6 +13,7 @@ import Title from './components/Title';
 import Introduction from './components/Introduction';
 import Description from './components/Description';
 import EmailField from './components/EmailField';
+import NameField from './components/NameField';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Introduction />
       <Description />
       <EmailField />
+      <NameField placeholder="First Name" />
       <Divider />
       <FooterTitle />
       <FooterSubtitle />
