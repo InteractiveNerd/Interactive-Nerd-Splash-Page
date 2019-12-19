@@ -24,3 +24,8 @@ body {
   font-family: 'Acumin Pro';
   font-weight: bold;
 }
+
+.timer--subtitle {
+  color: var(--secondary-text);
+  font-size: 1.25rem;
+}
