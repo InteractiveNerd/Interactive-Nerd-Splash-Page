@@ -4,6 +4,7 @@ import Logo from './components/Logo';
 import Timer from './components/Timer';
 import TimerSubtitle from './components/TimerSubtitle';
 import TimerTitle from './components/TimerTitle';
+import Divider from './components/Divider';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <TimerTitle />
       <Timer />
       <TimerSubtitle />
+      <Divider />
     </div>
   );
 }
