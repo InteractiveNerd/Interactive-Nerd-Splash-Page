@@ -11,6 +11,7 @@ import Border from './components/Border';
 import Subtitle from './components/Subtitle';
 import Title from './components/Title';
 import Introduction from './components/Introduction';
+import Description from './components/Description';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Subtitle />
       <Title />
       <Introduction />
+      <Description />
       <Divider />
       <FooterTitle />
       <FooterSubtitle />
