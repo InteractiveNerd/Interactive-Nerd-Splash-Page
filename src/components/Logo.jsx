@@ -3,7 +3,7 @@ import '../stylesheets/Logo.css'
 
 const Logo = () => {
   return (
-    <div className="logo">in.</div>
+    <div className="logo bolded--text">in.</div>
   );
 }
 
