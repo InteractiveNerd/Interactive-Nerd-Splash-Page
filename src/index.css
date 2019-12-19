@@ -20,6 +20,13 @@ body {
   background: var(--green);
 }
 
+.regular--text {
+  color: var(--white);
+  font: lighter 0.875rem 'Acumin Pro';
+  line-height: 1.375rem;
+  width: 16.125rem;
+}
+
 .bolded--text {
   font-family: 'Acumin Pro';
   font-weight: bold;
