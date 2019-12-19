@@ -8,6 +8,12 @@
   --green: #9DC408;
   --dark-green: #659723;
   --black: #24231F;
+  --white: #F7FFF2;
+  --secondary-text: #F0FDE8;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
