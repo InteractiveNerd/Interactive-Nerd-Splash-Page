@@ -20,6 +20,10 @@ body {
   background: var(--green);
 }
 
+a {
+  color: inherit;
+}
+
 .regular--text {
   color: var(--white);
   font: lighter 0.875rem 'Acumin Pro';
@@ -44,4 +48,8 @@ body {
   height: 2rem;
   font-size: 0.687rem;
   padding-left: 0.5rem;
+}
+
+.background--fill {
+  background: var(--green);
 }
