@@ -7,6 +7,7 @@ import TimerTitle from './components/TimerTitle';
 import Divider from './components/Divider';
 import FooterTitle from './components/FooterTitle';
 import FooterSubtitle from './components/FooterSubtitle';
+import Border from './components/Border';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <TimerTitle />
       <Timer />
       <TimerSubtitle />
+      <Border />
       <Divider />
       <FooterTitle />
       <FooterSubtitle />
