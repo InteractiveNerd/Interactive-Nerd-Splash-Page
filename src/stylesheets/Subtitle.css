@@ -1,0 +1,6 @@
+.subtitle {
+  color: var(--green);
+  font-size: 0.625rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
