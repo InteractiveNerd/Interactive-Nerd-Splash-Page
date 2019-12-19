@@ -12,6 +12,7 @@ import Subtitle from './components/Subtitle';
 import Title from './components/Title';
 import Introduction from './components/Introduction';
 import Description from './components/Description';
+import EmailField from './components/EmailField';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Title />
       <Introduction />
       <Description />
+      <EmailField />
       <Divider />
       <FooterTitle />
       <FooterSubtitle />
