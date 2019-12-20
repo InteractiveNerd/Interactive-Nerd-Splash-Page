@@ -1,6 +1,3 @@
 .intro--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 16.25rem;
 }

@@ -4,7 +4,9 @@ import '../stylesheets/IntroButton.css';
 const IntroButton = () => {
   return (
     <div>
-      <button className="intro--button bolded--text">Join our mailing list</button>
+      <a href="index.html">
+        <button className="intro--button bolded--text">Join our mailing list</button>
+      </a>
     </div>
   );
 }

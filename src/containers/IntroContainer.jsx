@@ -3,7 +3,6 @@ import Border from '../components/Border';
 import Subtitle from '../components/Subtitle';
 import Title from '../components/Title';
 import Introduction from '../components/Introduction';
-import Description from '../components/Description';
 import '../stylesheets/IntroContainer.css';
 
 const IntroContainer = () => {
@@ -13,7 +12,6 @@ const IntroContainer = () => {
       <Subtitle />
       <Title />
       <Introduction />
-      <Description />
     </div>
   );
 }
