@@ -10,6 +10,7 @@ import FooterSubtitle from './components/FooterSubtitle';
 import IntroBanner from './states/IntroBanner';
 import EmailBanner from './states/EmailBanner';
 import NameBanner from './states/NameBanner';
+import CongratulationsBanner from './states/CongratulationsBanner';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <IntroBanner />
       <EmailBanner />
       <NameBanner />
+      <CongratulationsBanner/>
       <Divider />
       <FooterTitle />
       <FooterSubtitle />
