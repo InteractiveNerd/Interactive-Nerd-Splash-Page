@@ -6,4 +6,10 @@
   text-transform: uppercase;
   color: var(--white);
   margin: 0.07rem 0 0 0.312rem;
+  transition: .3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--green);
+  color: var(--white);
 }

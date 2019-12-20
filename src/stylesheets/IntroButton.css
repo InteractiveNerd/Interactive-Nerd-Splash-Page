@@ -7,6 +7,7 @@
   color: var(--white);
   font-size: 0.875rem;
   margin: 0 0 0.5rem 2.1rem;
+  transition: .3s ease-in-out;
 }
 
 .intro--button:hover {

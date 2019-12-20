@@ -18,7 +18,7 @@ function App() {
       <TimerTitle />
       <Timer />
       <TimerSubtitle />
-      {/* <IntroBanner /> */}
+      <IntroBanner />
       <EmailBanner />
       <NameField placeholder="First Name" />
       <Divider />
