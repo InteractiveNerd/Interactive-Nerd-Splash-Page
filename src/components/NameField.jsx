@@ -14,6 +14,7 @@ class NameField extends Component {
       <div>
         <input
           className="input--field name--field"
+          required={true}
           placeholder={placeholder}
           type={type}
           id={id}

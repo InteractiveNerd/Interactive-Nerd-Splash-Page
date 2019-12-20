@@ -16,6 +16,7 @@ import EmailField from './components/EmailField';
 import NameField from './components/NameField';
 import Submit from './components/SubmitButton';
 import UserAgreement from './components/UserAgreement';
+import Checkbox from './components/Checkbox';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <EmailField />
       <NameField placeholder="First Name" />
       <Submit />
+      <Checkbox />
       <UserAgreement />
       <Divider />
       <FooterTitle />
