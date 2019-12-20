@@ -39,6 +39,7 @@ a {
 .timer--subtitle {
   color: var(--secondary-text);
   font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 .input--field {

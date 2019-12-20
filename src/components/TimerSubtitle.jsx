@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const TimerSubtitle = () => {
-  return (
-    <div className="timer--subtitle bolded--text">
-      <p>DAYS</p>
-    </div>
-  );
+class TimerSubtitle extends Component {
+  static defaultProps = {
+    text: 'Days'
+  }
+  render() {
+    const { text } = this.props;
+    return (
+      <div className="timer--subtitle bolded--text">
+        <p>{text}</p>
+      </div>
+    );
+  }
 }
 
 export default TimerSubtitle;
