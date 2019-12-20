@@ -8,9 +8,8 @@ import Divider from './components/Divider';
 import FooterTitle from './components/FooterTitle';
 import FooterSubtitle from './components/FooterSubtitle';
 import NameField from './components/NameField';
-import PrivacyContainer from './containers/PrivacyContainer';
 import IntroBanner from './states/IntroBanner';
-import EmailContainer from './containers/EmailContainer';
+import EmailBanner from './states/EmailBanner';
 
 function App() {
   return (
@@ -19,9 +18,8 @@ function App() {
       <TimerTitle />
       <Timer />
       <TimerSubtitle />
-      <IntroBanner />
-      <PrivacyContainer />
-      <EmailContainer />
+      {/* <IntroBanner /> */}
+      <EmailBanner />
       <NameField placeholder="First Name" />
       <Divider />
       <FooterTitle />

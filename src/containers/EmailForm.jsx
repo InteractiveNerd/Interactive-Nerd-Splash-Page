@@ -4,7 +4,7 @@ import SubmitButton from '../components/SubmitButton';
 
 const EmailForm = () => {
   return (
-    <div className="flex--container">
+    <div className="flex--container form--space">
       <EmailField />
       <SubmitButton />
     </div>
