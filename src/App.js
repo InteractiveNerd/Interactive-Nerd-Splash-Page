@@ -7,17 +7,10 @@ import TimerTitle from './components/TimerTitle';
 import Divider from './components/Divider';
 import FooterTitle from './components/FooterTitle';
 import FooterSubtitle from './components/FooterSubtitle';
-import Border from './components/Border';
-import Subtitle from './components/Subtitle';
-import Title from './components/Title';
-import Introduction from './components/Introduction';
-import Description from './components/Description';
 import EmailField from './components/EmailField';
 import NameField from './components/NameField';
-import Submit from './components/SubmitButton';
-import UserAgreement from './components/UserAgreement';
-import Checkbox from './components/Checkbox';
-import IntroButton from './components/IntroButton';
+import IntroContainer from './containers/IntroContainer';
+import PrivacyContainer from './containers/PrivacyContainer';
 
 function App() {
   return (
@@ -26,17 +19,10 @@ function App() {
       <TimerTitle />
       <Timer />
       <TimerSubtitle />
-      <Border />
-      <Subtitle />
-      <Title />
-      <Introduction />
-      <Description />
+      <IntroContainer />
+      <PrivacyContainer />
       <EmailField />
       <NameField placeholder="First Name" />
-      <IntroButton />
-      <Submit />
-      <Checkbox />
-      <UserAgreement />
       <Divider />
       <FooterTitle />
       <FooterSubtitle />

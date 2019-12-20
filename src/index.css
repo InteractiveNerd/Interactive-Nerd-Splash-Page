@@ -28,7 +28,6 @@ a {
   color: var(--white);
   font: lighter 0.875rem 'Acumin Pro';
   line-height: 1.375rem;
-  width: 16.125rem;
 }
 
 .bolded--text {
@@ -53,4 +52,8 @@ a {
 
 .background--fill {
   background: var(--green);
+}
+
+.flex--container {
+  display: flex;
 }
