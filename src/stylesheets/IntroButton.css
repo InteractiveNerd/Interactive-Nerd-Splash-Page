@@ -8,3 +8,8 @@
   font-size: 0.875rem;
   margin: 0 0 0.5rem 2.1rem;
 }
+
+.intro--button:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
