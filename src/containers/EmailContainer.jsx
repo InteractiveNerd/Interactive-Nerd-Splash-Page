@@ -7,7 +7,7 @@ import Description from '../components/Description';
 
 const EmailContainer = () => {
   return (
-    <div className="intro--container">
+    <div>
       <Border />
       <Subtitle text="Sign Up" />
       <Title text="Join our mailing list" />

@@ -5,7 +5,7 @@
   height: 1.875rem;
   text-transform: uppercase;
   color: var(--white);
-  margin: 0.07rem 0 0 0.312rem;
+  margin-top: 0.07rem;
   transition: .3s ease-in-out;
 }
 

@@ -68,3 +68,7 @@ a {
 .form--space {
   margin-bottom: 0.55rem;
 }
+
+.field--space {
+  margin-right: 0.3rem;
+}

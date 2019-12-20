@@ -13,7 +13,7 @@ class NameField extends Component {
     return (
       <div>
         <input
-          className="input--field name--field"
+          className="input--field name--field field--space"
           required={true}
           placeholder={placeholder}
           type={type}
