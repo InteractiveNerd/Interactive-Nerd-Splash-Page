@@ -62,7 +62,5 @@ a {
   background-color: var(--black);
   width: 20.451rem;
   height: auto;
-  display: flex;
-  flex-direction: column;
   padding: 2rem;
 }
