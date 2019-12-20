@@ -2,7 +2,7 @@ import React from 'react';
 import EmailField from '../components/EmailField';
 import SubmitButton from '../components/SubmitButton';
 
-const EmailContainer = () => {
+const EmailForm = () => {
   return (
     <div className="flex--container">
       <EmailField />
@@ -11,4 +11,4 @@ const EmailContainer = () => {
   );
 }
 
-export default EmailContainer;
+export default EmailForm;
