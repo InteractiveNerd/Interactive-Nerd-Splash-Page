@@ -7,10 +7,7 @@ import TimerTitle from './components/TimerTitle';
 import Divider from './components/Divider';
 import FooterTitle from './components/FooterTitle';
 import FooterSubtitle from './components/FooterSubtitle';
-import IntroBanner from './states/IntroBanner';
-import EmailBanner from './states/EmailBanner';
-import NameBanner from './states/NameBanner';
-import CongratulationsBanner from './states/CongratulationsBanner';
+import SignUpContainer from './containers/SignupContainer';
 
 function App() {
   return (
@@ -19,10 +16,7 @@ function App() {
       <TimerTitle />
       <Timer />
       <TimerSubtitle />
-      <IntroBanner />
-      <EmailBanner />
-      <NameBanner />
-      <CongratulationsBanner/>
+      <SignUpContainer />
       <Divider />
       <FooterTitle />
       <FooterSubtitle />
