@@ -13,9 +13,9 @@ class IntroBanner extends Component {
     return (
       <div className="banner">
         <IntroContainer />
-        <IntroButton
-          onClick={this.continue}
-        />
+        <form onClick={this.continue}>
+          <IntroButton />
+        </form>
       </div>
     );
   }

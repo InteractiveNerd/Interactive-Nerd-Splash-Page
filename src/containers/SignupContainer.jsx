@@ -34,9 +34,7 @@ class SignUpContainer extends Component {
       case 1:
         return (
           <div>
-            <IntroBanner
-              nextStep={nextStep}
-            />
+            <IntroBanner {...props} />
           </div>
         )
       case 2:
