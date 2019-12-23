@@ -5,16 +5,16 @@ const SocialContainer = () => {
   return (
     <div className="flex--container social--container">
       <a href="index.html">
-        <i class="fab fa-twitter fa-lg"></i>
+        <i className="fab fa-twitter fa-lg"></i>
       </a>
       <a href="index.html">
-        <i class="fab fa-instagram fa-lg"></i>
+        <i className="fab fa-instagram fa-lg"></i>
       </a>
       <a href="index.html">
-        <i class="fab fa-facebook-square fa-lg"></i>
+        <i className="fab fa-facebook-square fa-lg"></i>
       </a>
       <a href="index.html">
-        <i class="fab fa-linkedin fa-lg"></i>
+        <i className="fab fa-linkedin fa-lg"></i>
       </a>
     </div>
   );

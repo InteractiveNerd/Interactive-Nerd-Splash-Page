@@ -7,7 +7,9 @@ class NameField extends Component {
       placeholder,
       type,
       id,
-      name
+      name,
+      values,
+      handleChange
     } = this.props;
 
     return (
@@ -19,6 +21,8 @@ class NameField extends Component {
           type={type}
           id={id}
           name={name}
+          onChange={handleChange}
+          inputValue={values}
         />
       </div>
     );

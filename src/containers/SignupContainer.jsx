@@ -53,6 +53,7 @@ class SignUpContainer extends Component {
         return (
           <div>
             <CongratulationsBanner />
+            {console.log(values)}
           </div>
         )
       default:
