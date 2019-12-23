@@ -35,10 +35,11 @@ a {
   font-weight: bold;
 }
 
-.timer--subtitle {
+.counter--subtitle {
   color: var(--secondary-text);
   font-size: 1.25rem;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .input--field {
@@ -71,4 +72,10 @@ a {
 
 .field--space {
   margin-right: 0.3rem;
+}
+
+.counter--container {
+  flex-direction: column;
+  text-align: center;
+  width: 10rem;
 }

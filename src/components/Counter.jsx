@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import '../stylesheets/Timer.css';
+import '../stylesheets/Counter.css';
 
-class Timer extends Component {
+class Counter extends Component {
   static defaultProps = {
-    value: '--'
+    value: '00'
   }
   render() {
     const { value } = this.props;
     return (
-      <div className="timer bolded--text">
+      <div className="counter bolded--text">
         <p>{value}</p>
       </div>
     );
   }
 }
 
-export default Timer;
+export default Counter;

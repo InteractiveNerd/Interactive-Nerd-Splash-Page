@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-class TimerSubtitle extends Component {
+class CounterSubtitle extends Component {
   static defaultProps = {
     text: 'Days'
   }
   render() {
     const { text } = this.props;
     return (
-      <div className="timer--subtitle bolded--text">
+      <div className="counter--subtitle bolded--text">
         <p>{text}</p>
       </div>
     );
   }
 }
 
-export default TimerSubtitle;
+export default CounterSubtitle;
