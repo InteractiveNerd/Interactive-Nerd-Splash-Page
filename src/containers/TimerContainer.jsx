@@ -8,30 +8,32 @@ class TimerContainer extends Component {
     minutesLeft: 0
   }
 
+  updateTimer() {
+    const launchDate = new Date("Jan 1, 2020 12:00:00").getTime();
+    const currentDate = new Date().getTime();
+
+    const diffTimeInMillisecs = Math.abs(launchDate - currentDate);
+    const diffDays = Math.floor(diffTimeInMillisecs / 86400000);
+    const diffHours =  Math.ceil((diffTimeInMillisecs % 86400000) / 3600000); 
+    const diffMins =  Math.ceil(((diffTimeInMillisecs % 86400000) % 3600000) / 60000); 
+    
+    console.log('this is the difference of days left' + diffDays);
+    
+    this.setState({daysLeft: diffDays})
+    this.setState({hoursLeft: diffHours})
+    this.setState({minutesLeft: diffMins})
+
+    console.log(this.state.daysLeft);
+    console.log(this.state.hoursLeft);
+    console.log(this.state.minutesLeft);
+  }
+
   intervalId = -1;
   componentDidMount() {
-    const second = 1000;
-    const minute = second * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
+    const second = 1000;  
 
-    const secondsInOneDay = second * minute * hour * day;
-    const secondsInOneHour = second * minute * hour;
-
-    const launchDate = new Date("Jan 1, 2020 12:00:00").getTime();
     this.intervalId = setInterval(() => {
-      let now = new Date().getTime();
-      let remainingTime = launchDate - now;
-
-      let remainingDays = Math.floor(remainingTime / secondsInOneDay);
-      let remainingHours = Math.floor((remainingTime % secondsInOneDay) / secondsInOneHour);
-      let remainingMinutes = Math.floor((remainingTime % secondsInOneHour) / minute);
-
-      this.setState(prevState => ({
-        daysLeft: prevState.daysLeft + remainingDays,
-        hoursLeft: prevState.hoursLeft + remainingHours,
-        minutesLeft: prevState.minutesLeft + remainingMinutes
-      }));
+      this.updateTimer()
     }, second);
   }
   componentWillUnmount() {
