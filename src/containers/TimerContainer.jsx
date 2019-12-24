@@ -3,12 +3,13 @@ import CounterContainer from './CounterContainer';
 
 class TimerContainer extends Component {
   state = {
-    daysLeft: '',
-    hoursLeft: '',
-    minutesLeft: ''
+    daysLeft: 0,
+    hoursLeft: 0,
+    minutesLeft: 0
   }
 
-  countDown = () => {
+  intervalId = -1;
+  componentDidMount() {
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
@@ -18,28 +19,37 @@ class TimerContainer extends Component {
     const secondsInOneHour = second * minute * hour;
 
     const launchDate = new Date("Jan 1, 2020 12:00:00").getTime();
-    let updateTime = setInterval(function() {
+    this.intervalId = setInterval(() => {
       let now = new Date().getTime();
       let remainingTime = launchDate - now;
-
-      this.setState({ daysLeft: this.state.daysLeft })
 
       let remainingDays = Math.floor(remainingTime / secondsInOneDay);
       let remainingHours = Math.floor((remainingTime % secondsInOneDay) / secondsInOneHour);
       let remainingMinutes = Math.floor((remainingTime % secondsInOneHour) / minute);
-    }, minute);
-    updateTime();
-  };
+
+      this.setState(prevState => ({
+        daysLeft: prevState.daysLeft + remainingDays,
+        hoursLeft: prevState.hoursLeft + remainingHours,
+        minutesLeft: prevState.minutesLeft + remainingMinutes
+      }));
+    }, second);
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
 
   render() {
     return (
       <div className="flex--container">
         <CounterContainer
+          value={this.state.daysLeft}
         />
         <CounterContainer
+          value={this.state.hoursLeft}
           text="Hours"
         />
         <CounterContainer
+          value={this.state.minutesLeft}
           text="Minutes"
         />
       </div>
