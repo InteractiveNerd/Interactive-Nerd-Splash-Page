@@ -8,32 +8,30 @@ class TimerContainer extends Component {
     minutesLeft: 0
   }
 
+  updateTimer() {
+    const launchDate = new Date("Jan 1, 2020 12:00:00").getTime();
+    const currentDate = new Date().getTime();
+    const oneDay = 86400000;
+    const oneHour = 3600000;
+    const oneMinute = 60000;
+
+    const remainingTime = Math.abs(launchDate - currentDate);
+    const remainingDays = Math.floor(remainingTime / oneDay);
+    const remainingHours = Math.ceil((remainingTime % oneDay) / oneHour);
+    const remainingMinutes = Math.ceil(((remainingTime % oneDay) % oneHour) / oneMinute);
+
+    this.setState({ daysLeft: remainingDays })
+    this.setState({ hoursLeft: remainingHours })
+    this.setState({ minutesLeft: remainingMinutes })
+  }
+
   intervalId = -1;
   componentDidMount() {
-    const second = 1000;
-    const minute = second * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
-
-    const secondsInOneDay = second * minute * hour * day;
-    const secondsInOneHour = second * minute * hour;
-
-    const launchDate = new Date("Jan 1, 2020 12:00:00").getTime();
     this.intervalId = setInterval(() => {
-      let now = new Date().getTime();
-      let remainingTime = launchDate - now;
-
-      let remainingDays = Math.floor(remainingTime / secondsInOneDay);
-      let remainingHours = Math.floor((remainingTime % secondsInOneDay) / secondsInOneHour);
-      let remainingMinutes = Math.floor((remainingTime % secondsInOneHour) / minute);
-
-      this.setState(prevState => ({
-        daysLeft: prevState.daysLeft + remainingDays,
-        hoursLeft: prevState.hoursLeft + remainingHours,
-        minutesLeft: prevState.minutesLeft + remainingMinutes
-      }));
-    }, second);
+      this.updateTimer()
+    }, 1000);
   }
+
   componentWillUnmount() {
     clearInterval(this.intervalId);
   }
