@@ -2,6 +2,7 @@
   color: var(--secondary-text);
   font-size: 0.625rem;
   text-transform: uppercase;
-  opacity: 0.8;
   letter-spacing: 0.019rem;
+  opacity: 0.8;
+  margin-bottom: 0.1rem;
 }

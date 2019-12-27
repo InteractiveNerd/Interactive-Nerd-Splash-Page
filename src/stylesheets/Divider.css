@@ -1,4 +1,5 @@
 .divider {
   border-bottom: 2px dotted var(--secondary-text);
   width: 25.187rem;
+  margin-bottom: 0.7rem;
 }
