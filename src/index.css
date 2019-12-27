@@ -77,5 +77,13 @@ a {
 .counter--container {
   flex-direction: column;
   text-align: center;
-  width: 10rem;
+  width: 11.2rem;
+}
+
+.side--container {
+  margin-right: 7rem;
+}
+
+.app--container {
+  align-items: center;
 }

@@ -4,7 +4,7 @@ import SignUpContainer from './SignupContainer';
 
 const AppContainer = () => {
   return (
-    <div className="flex--container">
+    <div className="app--container flex--container">
       <SideContainer />
       <SignUpContainer />
     </div>

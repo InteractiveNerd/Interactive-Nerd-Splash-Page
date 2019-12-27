@@ -4,7 +4,7 @@ import TimerContainer from '../containers/TimerContainer';
 
 const SideContainer = () => {
   return (
-    <div>
+    <div className="side--container">
       <TimerTitle />
       <TimerContainer />
     </div>
