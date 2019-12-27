@@ -74,6 +74,10 @@ a {
   margin-right: 0.3rem;
 }
 
+.container--spacing {
+  margin: 3rem 8rem;
+}
+
 .counter--container {
   flex-direction: column;
   text-align: center;
@@ -81,9 +85,9 @@ a {
 }
 
 .side--container {
-  margin-right: 7rem;
+  margin-top: 8rem;
 }
 
 .app--container {
-  align-items: center;
+  justify-content: center;
 }

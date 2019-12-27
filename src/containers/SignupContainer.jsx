@@ -33,25 +33,25 @@ class SignUpContainer extends Component {
     switch (step) {
       case 1:
         return (
-          <div>
+          <div className="container--spacing">
             <IntroBanner nextStep={nextStep} />
           </div>
         )
       case 2:
         return (
-          <div>
+          <div className="container--spacing">
             <EmailBanner {...props} />
           </div>
         )
       case 3:
         return (
-          <div>
+          <div className="container--spacing">
             <NameBanner {...props} />
           </div>
         )
       case 4:
         return (
-          <div>
+          <div className="container--spacing">
             <CongratulationsBanner />
             {console.log(values)}
           </div>
