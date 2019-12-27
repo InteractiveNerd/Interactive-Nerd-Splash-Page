@@ -29,7 +29,7 @@ class TimerContainer extends Component {
   componentDidMount() {
     this.intervalId = setInterval(() => {
       this.updateTimer()
-    }, 1000);
+    }, 500);
   }
 
   componentWillUnmount() {
