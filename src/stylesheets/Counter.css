@@ -4,3 +4,10 @@
   padding-bottom: 0rem;
   height: 7.95rem;
 }
+
+@media (min-width: 320px) {
+  .counter {
+    font-size: 2rem;
+    height: 2.3rem;
+  }
+}

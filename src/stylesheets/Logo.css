@@ -3,3 +3,9 @@
   font-size: 2rem;
   margin: 2rem 3rem;
 }
+
+@media (min-width: 320px) {
+  .logo {
+    text-align: center;
+  }
+}

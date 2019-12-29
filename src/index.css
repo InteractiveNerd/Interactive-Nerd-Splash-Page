@@ -6,6 +6,10 @@
   --secondary-text: #F0FDE8;
 }
 
+/* div {
+  border: 0.5px solid red;
+} */
+
 * {
   padding: 0;
   margin: 0;
@@ -40,6 +44,13 @@ a {
   font-size: 1.15rem;
   text-transform: uppercase;
   margin-top: 0;
+}
+
+@media (min-width: 320px) {
+  .counter--subtitle {
+    font-size: 0.8rem;
+    height: 1.3rem;
+  }
 }
 
 .input--field {
@@ -78,6 +89,12 @@ a {
   margin: 1rem 8rem;
 }
 
+@media (min-width: 320px) {
+  .container--spacing {
+    margin: 2rem auto;
+  }
+}
+
 .counter--container {
   flex-direction: column;
   text-align: center;
@@ -88,12 +105,29 @@ a {
   margin-top: 7rem;
 }
 
+@media (min-width: 320px) {
+  .side--container {
+    margin-top: 1rem;
+  }
+}
+
 .app--container {
   justify-content: center;
+}
+
+@media (min-width: 320px) {
+  .app--container {
+    flex-direction: column;
+  }
 }
 
 .footer {
   flex-direction: column;
   align-items: center;
   margin: 2.2rem;
+  position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 2rem;
+	width: 100%;
 }

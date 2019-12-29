@@ -3,3 +3,9 @@
   font-size: 3.352rem;
   margin-left: 2.8rem;
 }
+
+@media (min-width: 320px) {
+  .timer--title {
+    font-size: 2rem;
+  }
+}
