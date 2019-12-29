@@ -38,7 +38,7 @@ class TimerContainer extends Component {
 
   render() {
     return (
-      <div className="flex--container">
+      <div className="timer--container flex--container">
         <CounterContainer
           value={this.state.daysLeft}
         />

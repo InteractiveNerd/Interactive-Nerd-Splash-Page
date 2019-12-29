@@ -3,3 +3,9 @@
   width: 25.187rem;
   margin-bottom: 0.7rem;
 }
+
+@media (min-width: 320px) {
+  .divider {
+    width: 18rem;
+  }
+}
