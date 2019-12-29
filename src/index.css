@@ -26,6 +26,7 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .regular--text {
@@ -41,7 +42,6 @@ a {
 
 .counter--subtitle {
   color: var(--secondary-text);
-  font-size: 1.15rem;
   text-transform: uppercase;
   margin-top: 0;
 }
@@ -50,6 +50,12 @@ a {
   .counter--subtitle {
     font-size: 0.8rem;
     height: 1.3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .counter--subtitle {
+    font-size: 1.15rem;
   }
 }
 
@@ -105,13 +111,17 @@ a {
   justify-content: center;
 }
 
-.side--container {
-  margin-top: 7rem;
-}
-
 @media (min-width: 320px) {
   .side--container {
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .side--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -122,6 +132,12 @@ a {
 @media (min-width: 320px) {
   .app--container {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app--container {
+    flex-direction: row;
   }
 }
 
@@ -138,5 +154,11 @@ a {
 @media (min-width: 320px) {
   .footer {
     margin: 2rem auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    margin: 5rem auto 0;
   }
 }
