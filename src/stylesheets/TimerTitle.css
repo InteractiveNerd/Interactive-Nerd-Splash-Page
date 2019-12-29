@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .timer--title {
     font-size: 3.352rem;
     margin: 0 0 0 2.8rem;

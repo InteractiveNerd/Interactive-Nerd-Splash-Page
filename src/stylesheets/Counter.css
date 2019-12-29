@@ -1,8 +1,5 @@
 .counter {
   color: var(--black);
-  font-size: 7.2rem;
-  padding-bottom: 0rem;
-  height: 7.95rem;
 }
 
 @media (min-width: 320px) {
@@ -23,5 +20,13 @@
   .counter {
     font-size: 4rem;
     height: 4.3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .counter {
+    font-size: 7.2rem;
+  padding-bottom: 0rem;
+  height: 7.95rem;
   }
 }

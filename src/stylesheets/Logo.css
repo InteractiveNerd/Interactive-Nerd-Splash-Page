@@ -9,3 +9,9 @@
     text-align: center;
   }
 }
+
+@media (min-width: 1000px) {
+  .logo {
+    text-align: left;
+  }
+}
