@@ -5,59 +5,76 @@ import NameBanner from '../states/NameBanner';
 import CongratulationsBanner from '../states/CongratulationsBanner';
 
 class SignUpContainer extends Component {
-  state = {
-    step: 1,
-    email: '',
-    firstName: '',
-    lastName: ''
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentStep: 1,
+      email: '',
+      firstName: '',
+      lastName: ''
+    }
+    this.handleChange = this.handleChange.bind(this)
   }
 
   nextStep = () => {
-    const { step } = this.state;
+    const { currentStep } = this.state;
     this.setState({
-      step: step + 1
+      currentStep: currentStep + 1
     });
   };
 
-  handleChange = input => e => {
-    this.setState({ [ input ]: e.target.value });
-  };
+  handleChange = input => {
+    const { name, value } = input.target;
+    this.setState({
+      [ name ]: value
+    })
+  }
+
+  handleSubmit = input => e => {
+    e.preventDefault();
+    // const { email, firstName, lastName } = this.state;
+    console.log(this.state);
+  }
 
   render() {
-    const { step, email, firstName, lastName } = this.state;
+    const { currentStep, email, firstName, lastName } = this.state;
     const values = { email, firstName, lastName };
     const nextStep = this.nextStep;
     const handleChange = this.handleChange;
-    const props = { nextStep, handleChange, values };
+    const handleSubmit = this.handleSubmit;
 
-    switch (step) {
-      case 1:
-        return (
-          <div className="container--spacing">
-            <IntroBanner nextStep={nextStep} />
-          </div>
-        )
-      case 2:
-        return (
-          <div className="container--spacing">
-            <EmailBanner {...props} />
-          </div>
-        )
-      case 3:
-        return (
-          <div className="container--spacing">
-            <NameBanner {...props} />
-          </div>
-        )
-      case 4:
-        return (
-          <div className="container--spacing">
-            <CongratulationsBanner />
-            {console.log(values)}
-          </div>
-        )
-      default:
-    }
+    return (
+      <div className="container--spacing">
+        <p>Step {currentStep}</p>
+        <form
+          onSubmit={handleSubmit}
+        // action="/signup"
+        // method="POST"
+        >
+          <IntroBanner
+            currentStep={currentStep}
+            nextStep={nextStep}
+          />
+          <EmailBanner
+            nextStep={nextStep}
+            currentStep={currentStep}
+            handleChange={handleChange}
+            values={values}
+          />
+          <NameBanner
+            nextStep={nextStep}
+            handleSubmit={handleSubmit}
+            currentStep={currentStep}
+            handleChange={handleChange}
+            values={values}
+          />
+          <CongratulationsBanner
+            currentStep={currentStep}
+            {...console.log(this.state)}
+          />
+        </form>
+      </div>
+    )
   }
 }
 

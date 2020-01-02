@@ -4,9 +4,7 @@ import Submit from '../components/SubmitButton';
 
 class NameForm extends Component {
   render() {
-    const { values, handleChange } = this.props;
-
-
+    const { firstName, lastName, handleChange } = this.props;
     return (
       <div className="flex--container form--space">
         <NameField
@@ -14,8 +12,8 @@ class NameForm extends Component {
           type="firstName"
           id="firstName"
           name="firstName"
-          handleChange={handleChange('firstName')}
-          values={values.firstName}
+          onChange={handleChange('firstName')}
+          values={firstName}
 
         />
         <NameField
@@ -23,8 +21,8 @@ class NameForm extends Component {
           type="lastName"
           id="lastName"
           name="lastName"
-          handleChange={handleChange('lastName')}
-          values={values.lastName}
+          onChange={handleChange('lastName')}
+          values={lastName}
 
         />
         <Submit text="Join" />

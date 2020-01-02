@@ -10,6 +10,11 @@ class IntroBanner extends Component {
   }
 
   render() {
+    const { currentStep } = this.props;
+    if (currentStep !== 1) {
+      return null
+    }
+
     return (
       <div className="banner">
         <IntroContainer />

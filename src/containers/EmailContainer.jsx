@@ -8,15 +8,17 @@ import Description from '../components/Description';
 class EmailContainer extends Component {
   render() {
     const { nextStep, values, handleChange } = this.props;
-    const props = { nextStep, values, handleChange }
-
     return (
       <div>
         <Border />
         <Subtitle text="Sign Up" />
         <Title text="Join our mailing list" />
         <Description />
-        <EmailForm {...props} />
+        <EmailForm
+          nextStep={nextStep}
+          handleChange={handleChange}
+          values={values}
+        />
       </div>
     );
   }

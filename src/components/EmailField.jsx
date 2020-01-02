@@ -14,7 +14,7 @@ class EmailField extends Component {
           type="email"
           id="email"
           name="email"
-          onChange={handleChange('email')}
+          onChange={handleChange}
           inputValue={values.email}
         />
       </div>

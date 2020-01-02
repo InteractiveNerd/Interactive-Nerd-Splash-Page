@@ -9,13 +9,17 @@ import PrivacyContainer from '../containers/PrivacyContainer';
 class NameBanner extends Component {
   continue = e => {
     e.preventDefault();
-    const { nextStep } = this.props;
+    const { nextStep, handleSubmit } = this.props;
     nextStep();
+    handleSubmit();
   };
 
   render() {
-    const { nextStep, values, handleChange } = this.props;
-    const props = { nextStep, values, handleChange };
+    const { currentStep, firstName, lastName, handleChange, handleSubmit } = this.props;
+    const props = { firstName, lastName, handleChange, handleSubmit };
+    if (currentStep !== 3) {
+      return null
+    }
 
     return (
       <div className="banner">
