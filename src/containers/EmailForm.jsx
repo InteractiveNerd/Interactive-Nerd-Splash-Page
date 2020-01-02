@@ -7,7 +7,7 @@ class EmailForm extends Component {
     const { values, handleChange } = this.props;
     const props = { values, handleChange };
     return (
-      <div>
+      <div className="flex--container form--space">
         <EmailField {...props} />
         <SubmitButton />
       </div>
