@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+.logo--emphasize {
+  color: var(--black);
+}
+
 .regular--text {
   color: var(--white);
   font: lighter 0.875rem 'Acumin Pro';
