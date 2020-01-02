@@ -30,9 +30,8 @@ class SignUpContainer extends Component {
     })
   }
 
-  handleSubmit = input => e => {
-    e.preventDefault();
-    // const { email, firstName, lastName } = this.state;
+  handleSubmit = e => {
+    const { email, firstName, lastName } = this.state;
     console.log(this.state);
   }
 
@@ -45,33 +44,26 @@ class SignUpContainer extends Component {
 
     return (
       <div className="container--spacing">
-        <p>Step {currentStep}</p>
-        <form
-          onSubmit={handleSubmit}
-        // action="/signup"
-        // method="POST"
-        >
-          <IntroBanner
-            currentStep={currentStep}
-            nextStep={nextStep}
-          />
-          <EmailBanner
-            nextStep={nextStep}
-            currentStep={currentStep}
-            handleChange={handleChange}
-            values={values}
-          />
-          <NameBanner
-            nextStep={nextStep}
-            handleSubmit={handleSubmit}
-            currentStep={currentStep}
-            handleChange={handleChange}
-            values={values}
-          />
-          <CongratulationsBanner
-            currentStep={currentStep}
-          />
-        </form>
+        <IntroBanner
+          currentStep={currentStep}
+          nextStep={nextStep}
+        />
+        <EmailBanner
+          nextStep={nextStep}
+          currentStep={currentStep}
+          handleChange={handleChange}
+          values={values}
+        />
+        <NameBanner
+          nextStep={nextStep}
+          handleSubmit={handleSubmit}
+          currentStep={currentStep}
+          handleChange={handleChange}
+          values={values}
+        />
+        <CongratulationsBanner
+          currentStep={currentStep}
+        />
       </div>
     )
   }
