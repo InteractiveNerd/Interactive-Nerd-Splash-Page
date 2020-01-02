@@ -9,7 +9,7 @@ class TimerContainer extends Component {
   }
 
   updateTimer() {
-    const launchDate = new Date("Jan 1, 2020 12:00:00").getTime();
+    const launchDate = new Date("Jan 8, 2020 12:00:00").getTime();
     const currentDate = new Date().getTime();
     const oneDay = 86400000;
     const oneHour = 3600000;
