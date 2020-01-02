@@ -70,7 +70,6 @@ class SignUpContainer extends Component {
           />
           <CongratulationsBanner
             currentStep={currentStep}
-            {...console.log(this.state)}
           />
         </form>
       </div>

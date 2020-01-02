@@ -15,8 +15,8 @@ class NameBanner extends Component {
   };
 
   render() {
-    const { currentStep, firstName, lastName, handleChange, handleSubmit } = this.props;
-    const props = { firstName, lastName, handleChange, handleSubmit };
+    const { currentStep, values, handleChange, handleSubmit } = this.props;
+    const props = { values, handleChange, handleSubmit };
     if (currentStep !== 3) {
       return null
     }
