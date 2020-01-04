@@ -3,6 +3,7 @@ import IntroBanner from '../states/IntroBanner';
 import EmailBanner from '../states/EmailBanner';
 import NameBanner from '../states/NameBanner';
 import CongratulationsBanner from '../states/CongratulationsBanner';
+import { request } from 'express';
 
 class SignUpContainer extends Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class SignUpContainer extends Component {
 
   handleSubmit = e => {
     const { email, firstName, lastName } = this.state;
-    console.log(this.state);
+
   }
 
   render() {

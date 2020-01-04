@@ -8,7 +8,6 @@ import PrivacyContainer from '../containers/PrivacyContainer';
 
 class NameBanner extends Component {
   continue = e => {
-    e.preventDefault();
     const { nextStep, handleSubmit } = this.props;
     nextStep();
     handleSubmit();
@@ -27,7 +26,11 @@ class NameBanner extends Component {
         <Subtitle text="Last step" />
         <Title text="Almost done!" />
         <Description text="Please enter your first & last name" />
-        <form onSubmit={this.continue}>
+        <form
+          onSubmit={this.continue}
+          action="/signup"
+          method="POST"
+        >
           <NameForm {...props} />
           <PrivacyContainer />
         </form>
