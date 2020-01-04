@@ -33,7 +33,39 @@ class SignUpContainer extends Component {
 
   handleSubmit = e => {
     const { email, firstName, lastName } = this.state;
+    const data = {
+      user: [
+        {
+          email_address: email,
+          status: 'Subscribed',
+          merge_fields: {
+            FNAME: firstName,
+            LNAME: lastName
+          }
+        }
+      ]
+    }
+    const postData = JSON.stringify(data);
+    const options = {
+      url: 'https://us4.api.mailchimp.com/3.0/lists/89060c2d3e',
+      method: 'POST',
+      headers: {
+        Authorization: 'auth d8350b6f303386ee01f6240b0e9439bd-us4'
+      },
+      body: postData
+    };
 
+    request(options, (err, response, body) => {
+      if (err) {
+        response.redirect('fatal: Please try again');
+      } else {
+        if (response.statusCode === 200) {
+          response.redirect('/success');
+        } else {
+          response.redirect('fatal: Please try again')
+        }
+      }
+    })
   }
 
   render() {
