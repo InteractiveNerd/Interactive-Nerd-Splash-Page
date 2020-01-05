@@ -8,6 +8,7 @@ import PrivacyContainer from '../containers/PrivacyContainer';
 
 class NameBanner extends Component {
   continue = e => {
+    e.preventDefault();
     const { nextStep, handleSubmit } = this.props;
     nextStep();
     handleSubmit();

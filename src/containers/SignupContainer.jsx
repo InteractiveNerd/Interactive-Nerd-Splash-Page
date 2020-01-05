@@ -3,7 +3,6 @@ import IntroBanner from '../states/IntroBanner';
 import EmailBanner from '../states/EmailBanner';
 import NameBanner from '../states/NameBanner';
 import CongratulationsBanner from '../states/CongratulationsBanner';
-import { request } from 'express';
 
 class SignUpContainer extends Component {
   constructor(props) {
@@ -46,26 +45,21 @@ class SignUpContainer extends Component {
       ]
     }
     const postData = JSON.stringify(data);
-    const options = {
-      url: 'https://us4.api.mailchimp.com/3.0/lists/89060c2d3e',
+
+    fetch('https://us4.api.mailchimp.com/3.0/lists/89060c2d3e', {
       method: 'POST',
       headers: {
+        'Access-Control-Allow-Origin': 'http://localhost:3000/',
+        'Access-Control-Allow-Credentials': 'true',
+        'Content-Type': 'application/json',
         Authorization: 'auth d8350b6f303386ee01f6240b0e9439bd-us4'
       },
       body: postData
-    };
-
-    request(options, (err, response, body) => {
-      if (err) {
-        response.redirect('fatal: Please try again');
-      } else {
-        if (response.statusCode === 200) {
-          response.redirect('/success');
-        } else {
-          response.redirect('fatal: Please try again')
-        }
-      }
+    }).then(res => {
+      return res.json()
     })
+      .then(data => console.log(data))
+      .catch(error => console.log('ERROR: Request invalid'))
   }
 
   render() {
