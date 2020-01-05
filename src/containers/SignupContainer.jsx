@@ -49,7 +49,7 @@ class SignUpContainer extends Component {
     fetch('https://us4.api.mailchimp.com/3.0/lists/89060c2d3e', {
       method: 'POST',
       headers: {
-        'Access-Control-Allow-Origin': 'http://localhost:3000/',
+        'Access-Control-Allow-Origin': 'https://inspiring-goodall-672d7c.netlify.com/',
         'Access-Control-Allow-Credentials': 'true',
         'Content-Type': 'application/json',
         Authorization: 'auth d8350b6f303386ee01f6240b0e9439bd-us4'
