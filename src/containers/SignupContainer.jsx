@@ -44,17 +44,21 @@ class SignUpContainer extends Component {
         }
       ]
     }
+
     const postData = JSON.stringify(data);
 
     fetch('https://us4.api.mailchimp.com/3.0/lists/89060c2d3e', {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
+        'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': 'https://inspiring-goodall-672d7c.netlify.com/',
         'Access-Control-Allow-Credentials': 'true',
-        'Content-Type': 'application/json',
-        Authorization: 'auth d8350b6f303386ee01f6240b0e9439bd-us4'
+        'X-HTTP-Method-Override': 'POST',
+        'Authorization': 'auth d8350b6f303386ee01f6240b0e9439bd-us4'
       },
-      body: postData
+      body: postData,
+      credentials: "same-origin"
     }).then(res => {
       return res.json()
     })
