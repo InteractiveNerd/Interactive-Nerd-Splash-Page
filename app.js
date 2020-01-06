@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const api_key = process.env.API_KEY;
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,7 +14,7 @@ app.post('/signup', (req, res) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'auth ef14184419772266980b5184031bd869-us4'
+      'Authorization': api_key
     },
     body: req.body
   }).then(response => {
