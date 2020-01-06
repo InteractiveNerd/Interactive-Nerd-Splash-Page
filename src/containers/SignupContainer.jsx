@@ -54,10 +54,10 @@ class SignUpContainer extends Component {
         'Content-Type': 'application/json'
       }
     }).then(res => {
-      return res.json()
+      return res.postData
     })
       .then(data => console.log(data))
-      .catch(error => console.log('ERROR: Server not found'))
+      .catch(error => console.log(error))
   }
 
   render() {

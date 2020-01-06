@@ -18,11 +18,11 @@ app.post('/signup', (req, res) => {
       'Authorization': api_key
     },
     body: req.body
-  }).then(response => {
-    return res.json()
+  }).then(data => {
+    return res.body
   })
-    .then(data => console.log(req.body))
-    .catch(error => console.log('ERROR'))
+    .then(data => res.json(data))
+    .catch(error => console.log(error))
 })
 
 const port = process.env.port || 5000;

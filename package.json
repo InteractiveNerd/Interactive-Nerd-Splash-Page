@@ -4,6 +4,7 @@
   "private": true,
   "description": "Interactive Nerd Newsletter Signup",
   "author": "Paul Saada",
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
