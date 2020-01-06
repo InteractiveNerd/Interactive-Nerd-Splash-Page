@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const fetch = require("node-fetch");
 const api_key = process.env.API_KEY;
 const app = express();
 

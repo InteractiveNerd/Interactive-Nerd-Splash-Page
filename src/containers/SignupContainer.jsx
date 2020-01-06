@@ -4,6 +4,8 @@ import EmailBanner from '../states/EmailBanner';
 import NameBanner from '../states/NameBanner';
 import CongratulationsBanner from '../states/CongratulationsBanner';
 
+const fetch = require("node-fetch");
+
 class SignUpContainer extends Component {
   constructor(props) {
     super(props)
