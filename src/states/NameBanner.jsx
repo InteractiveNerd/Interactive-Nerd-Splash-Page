@@ -29,8 +29,6 @@ class NameBanner extends Component {
         <Description text="Please enter your first & last name" />
         <form
           onSubmit={this.continue}
-          action="/signup"
-          method="POST"
         >
           <NameForm {...props} />
           <PrivacyContainer />
