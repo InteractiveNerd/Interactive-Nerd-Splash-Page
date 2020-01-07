@@ -56,7 +56,7 @@ class SignUpContainer extends Component {
     }).then(res => {
       return res.postData
     })
-      .then(data => console.log(data))
+      // .then(data => data.json(data))
       .catch(error => console.log(error))
   }
 

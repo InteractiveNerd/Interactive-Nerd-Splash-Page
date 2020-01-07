@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.post('/signup', (req, res) => {
-  fetch('https://us4.api.mailchimp.com/3.0/lists/89060c2d3e/members/', {
+  fetch('https://us4.api.mailchimp.com/3.0/lists/89060c2d3e/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
