@@ -1,0 +1,15 @@
+.button {
+  border: 0.062rem solid var(--green);
+  background: transparent;
+  width: 3rem;
+  height: 1.875rem;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-top: 0.07rem;
+  transition: .3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--green);
+  color: var(--white);
+}

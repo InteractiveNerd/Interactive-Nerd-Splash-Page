@@ -1,0 +1,26 @@
+.timer--title {
+  color: var(--white);
+}
+
+@media (min-width: 320px) {
+  .timer--title {
+    font-size: 2rem;
+    margin: 0 0 0.8rem 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .timer--title {
+    font-size: 2.8rem;
+    margin: 0 0 0.5rem 4rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .timer--title {
+    font-size: 3.352rem;
+    margin: 0 0 0 2.8rem;
+  }
+}

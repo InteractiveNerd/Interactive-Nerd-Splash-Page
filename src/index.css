@@ -1,5 +1,179 @@
+:root {
+  --green: #9DC408;
+  --dark-green: #659723;
+  --black: #24231F;
+  --white: #F7FFF2;
+  --secondary-text: #F0FDE8;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  background: var(--green);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo--emphasize {
+  color: var(--black);
+}
+
+.regular--text {
+  color: var(--white);
+  font: lighter 0.875rem 'Acumin Pro';
+  line-height: 1.375rem;
+}
+
+.bolded--text {
+  font-family: 'Acumin Pro';
+  font-weight: bold;
+}
+
+.counter--subtitle {
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+@media (min-width: 320px) {
+  .counter--subtitle {
+    font-size: 0.8rem;
+    height: 1.3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .counter--subtitle {
+    font-size: 1.15rem;
+  }
+}
+
+.input--field {
+  background: var(--white) 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 0.187rem;
+  height: 2rem;
+  font-size: 0.687rem;
+  padding-left: 0.5rem;
+}
+
+.background--fill {
+  background: var(--green);
+}
+
+.flex--container {
+  display: flex;
+}
+
+.banner {
+  background-color: var(--black);
+  width: 20.451rem;
+  height: auto;
+  padding: 2rem;
+}
+
+.form--space {
+  margin-bottom: 0.55rem;
+}
+
+.field--space {
+  margin-right: 0.3rem;
+}
+
+.container--spacing {
+  margin: 1rem 8rem;
+}
+
+@media (min-width: 320px) {
+  .container--spacing {
+    margin: 2rem auto 3rem;
+  }
+}
+
+.counter--container {
+  flex-direction: column;
+  text-align: center;
+  width: 11.2rem;
+}
+
+.timer--container {
+  justify-content: center;
+}
+
+@media (min-width: 320px) {
+  .side--container {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .side--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 5rem;
+  }
+}
+
+.app--container {
+  justify-content: center;
+}
+
+@media (min-width: 320px) {
+  .app--container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+  .app--container {
+    flex-direction: row;
+    padding-bottom: 1rem;
+  }
+}
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+  margin: 2.2rem;
+	left: 0;
+	bottom: 0;
+	height: 2rem;
+	width: 100%;
+}
+
+@media (min-width: 320px) {
+  .footer {
+    margin: 3rem auto 2rem 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    margin: 1.4rem auto;
+    position: absolute;
+  }
 }

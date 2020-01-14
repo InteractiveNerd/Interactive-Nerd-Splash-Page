@@ -1,0 +1,16 @@
+.divider {
+  border-bottom: 2px dotted var(--secondary-text);
+  margin-bottom: 0.7rem;
+}
+
+@media (min-width: 320px) {
+  .divider {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .divider {
+    width: 25.187rem;
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  color: var(--white);
+  font-size: 1.75rem;
+  margin: 2rem 3rem;
+}
+
+@media (min-width: 320px) {
+  .logo {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .logo {
+    text-align: left;
+  }
+}
